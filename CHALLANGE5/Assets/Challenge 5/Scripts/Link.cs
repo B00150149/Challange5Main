@@ -5,14 +5,12 @@ using UnityEngine.UI;
 public class Link : MonoBehaviour 
 {
 
-	public void OpenGithub()
-	{
-#if !UNITY_EDITOR
-		openWindow("https://github.com/B00150149/Challange5Main");
-#endif
+    public void OpenGithub()
+    {
+        Application.OpenURL("https://github.com/B00150149/Challange5Main");
     }
 
-    [DllImport("__Internal")]
-	private static extern void openWindow(string url);
+
+ 
 
 }
